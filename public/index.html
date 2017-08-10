@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script defer src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="scripts.js"></script>
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="rooms"></div>
+        <div class="messages">
+            <div class="list"></div>
+            <div class="new">
+                <input type="text" id="txtMessage" placeholder="new message">
+                <button id="btnSubmitMessage">send</button>
+            </div>
+            <div class="notifications"></div>
+        </div>
+        <div class="users"></div>
+    </div>
+    <div class="overlay">
+        <div class="username">
+            <input type="text" id="txtUsername" placeholder="pick a username">
+            <button id="btnSubmitUsername">register</button>
+        </div>
+    </div>
+</body>
+</html>
